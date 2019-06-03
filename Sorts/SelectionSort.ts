@@ -1,4 +1,4 @@
-let list: number[] = [29,46,24,39,95];
+let list: number[];
 let i,j,min: number;
 let selectionSort = function(arr:number[]) {
     console.log("Your array is current... " + arr.toString());
