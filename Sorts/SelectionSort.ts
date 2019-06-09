@@ -1,5 +1,10 @@
 let list: number[];
 let i,j,min: number;
+let swap = (val1:any, val2:any) => {
+    const temp = val1;
+    val1 = val2;
+    val2 = temp;
+};
 let selectionSort = function(arr:number[]) {
     console.log("Your array is current... " + arr.toString());
     console.log("Sorting...")
@@ -10,9 +15,7 @@ let selectionSort = function(arr:number[]) {
                 min = j;
             }
         }
-        const temp = arr[min];
-        arr[min] = arr[i];
-        arr[i] = temp;
+        swap(arr[min],arr[i]);
     }
 };
 selectionSort(list);
